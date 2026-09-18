@@ -7,32 +7,15 @@ website: https://github.com/CorruptedStudio/
 api-version: '26.2'
 softdepend: [Vault, LuckPerms]
 commands:
-  info:
-    description: Shows player information.
-    usage: /info [player]
-    permission: activity.info
-  detailinfo:
-    description: Shows detailed player information.
-    usage: /detailinfo [player]
-    permission: activity.detailinfo
-  guiinfo:
-    description: Opens the live player information GUI.
-    usage: /guiinfo [player]
-    permission: activity.guiinfo
-  afk:
-    description: Toggles AFK mode.
-    usage: /afk
-    permission: activity.afk
-  activity:
-    description: Activity leaderboard and administration.
-    usage: /activity <top|winners|reload|reset|resetweek|forcewin>
-  afkzone:
-    description: Manages cuboid AFK zones.
-    usage: /afkzone <create|delete|list|info|setpos1|setpos2|setreward|setprotection>
-    permission: activity.zone
+  info: {description: Shows player information., usage: /info [player], permission: activity.info}
+  detailinfo: {description: Shows detailed player information., usage: /detailinfo [player], permission: activity.detailinfo}
+  guiinfo: {description: Opens the live player information GUI., usage: /guiinfo [player], permission: activity.guiinfo}
+  afk: {description: Toggles AFK mode., usage: /afk, permission: activity.afk}
+  activity: {description: Activity leaderboard and administration., usage: /activity <top|winners|reload|reset|resetweek|forcewin>}
+  afkzone: {description: Manages cuboid AFK zones., usage: /afkzone <create|delete|list|info|setpos1|setpos2|setreward|setprotection>, permission: activity.zone}
 permissions:
   activity.info: {default: true}
-  activity.info.others: {default: true}
+  activity.info.others: {default: op}
   activity.detailinfo: {default: true}
   activity.detailinfo.others: {default: op}
   activity.guiinfo: {default: true}
