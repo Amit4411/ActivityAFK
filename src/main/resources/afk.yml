@@ -1,0 +1,28 @@
+# AFK settings. AFK time is never active playtime.
+enabled: true
+reward:
+  enabled: false
+  interval-seconds: 3600
+  max-reward-time-seconds: 14400
+  daily-limit: 4
+  commands:
+    - 'eco give [player] 25'
+protection:
+  enabled: true
+  damage: true
+  player-damage: true
+  mob-damage: true
+  phantom: true
+  fire: true
+  lava: true
+  drowning: true
+  fall: true
+  projectile: true
+  hunger: true
+  knockback: true
+block-protection:
+  enabled: true
+  radius: 2
+  block-break: true
+  block-place: true
+  bucket-use: true

@@ -1,0 +1,9 @@
+# Console commands for exact ranking positions. Any number of positions is supported.
+weekly-rewards:
+  1:
+    enabled: true
+    commands:
+      - 'give [player] diamond 5'
+  2:
+    enabled: false
+    commands: []

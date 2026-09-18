@@ -1,0 +1,32 @@
+# ActivityAFK general settings. All durations are seconds unless stated otherwise.
+timezone: Asia/Kolkata
+leaderboard-size: 10
+automatic-afk:
+  enabled: true
+  after-seconds: 300
+  camera-cancels: true
+  movement-cancels: true
+  interaction-cancels: true
+schedule:
+  week-reset:
+    day: MONDAY
+    time: '00:00:00'
+  reward-time:
+    day: MONDAY
+    time: '00:05:00'
+ties:
+  reward-all-equal: true
+  ranking-mode: competition
+gui:
+  enabled: true
+  title: '&8Player Information: &e[player]'
+  size: 9
+  refresh-interval-ticks: 1
+  normal-info:
+    slot: 3
+    material: BOOK
+    name: '&ePlayer Information'
+  detailed-info:
+    slot: 5
+    material: WRITABLE_BOOK
+    name: '&6Detailed Information'
